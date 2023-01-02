@@ -48,7 +48,8 @@ ADMIN_EMAIL_LIST = ['micrufun@gmail.com']
 ### Copied from README of the above repo:
 
 # https://stackoverflow.com/a/12995923/3405291
-from django.utils.translation import gettext as _
+# https://stackoverflow.com/a/43858622/3405291
+from django.utils.translation import gettext_lazy as _
 
 gettext = lambda s: s
 
