@@ -113,5 +113,6 @@ npm install --legacy-peer-deps
 sudo su
 /usr/local/bin/docker-compose exec web python -m pip install -r requirements.txt
 /usr/local/bin/docker-compose exec -T web python manage.py makemigrations ads
-...
+/usr/local/bin/docker-compose exec -T web python manage.py migrate ads
+/usr/local/bin/docker-compose restart web celery_worker celery_beat
 ```
