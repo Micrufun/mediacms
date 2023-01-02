@@ -299,6 +299,7 @@ INSTALLED_APPS = [
     "djcelery_email",
     "ckeditor",
     "drf_yasg",
+    'ads.apps.AdsConfig',
 ]
 
 MIDDLEWARE = [
