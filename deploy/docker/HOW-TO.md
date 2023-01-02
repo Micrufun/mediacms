@@ -106,3 +106,12 @@ npm install --legacy-peer-deps
    * `npm run build`
    * `npm run start`
 * Maybe helpful: https://github.com/naomiaro/waveform-playlist/issues/51#issuecomment-284560392
+
+## Ads management system
+
+```
+sudo su
+/usr/local/bin/docker-compose exec web python -m pip install -r requirements.txt
+/usr/local/bin/docker-compose exec -T web python manage.py makemigrations ads
+...
+```
