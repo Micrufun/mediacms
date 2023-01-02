@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{% load ads_tags %}
 
 {% block headtitle %}{{media_object.title}} - {{PORTAL_NAME}}{% endblock headtitle %}
 
@@ -121,8 +120,6 @@
 <link href="{% static "css/media.css" %}" rel="preload" as="style">
 <link href="{% static "css/media.css" %}" rel="stylesheet">
 {%endblock topimports %}
-
-{% render_ads_zone 'zone_name' %}
 
 {% block content %}<div id="page-media"></div>{% endblock content %}
 

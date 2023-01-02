@@ -7,6 +7,10 @@
 {% endblock %}
 
 {% block content %}
+
+{% load ads_tags %}
+{% render_ads_zone 'Header' %}
+
 <div class="page-main">
     <div class="page-main-inner">
     {% block innercontent %}{% endblock innercontent %}
