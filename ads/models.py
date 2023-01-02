@@ -40,7 +40,9 @@ class Category(models.Model):
         verbose_name=_('Description'), blank=True)
     created_by = models.ForeignKey(
         settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL,
-        verbose_name=_('Created By'))
+        verbose_name=_('Created By'),
+        related_name='ads_category_set',) # To fix error: reverse accessor clash with `files.Category.user`
+                                          # https://stackoverflow.com/a/41595447/3405291
 
     class Meta:
         verbose_name = _('Category')
