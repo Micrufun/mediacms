@@ -47,6 +47,9 @@ ADMIN_EMAIL_LIST = ['micrufun@gmail.com']
 ### https://github.com/Micrufun/django-ads
 ### Copied from README of the above repo:
 
+# https://stackoverflow.com/a/12995923/3405291
+from django.utils.translation import gettext as _
+
 gettext = lambda s: s
 
 ADS_GOOGLE_ADSENSE_CLIENT = None  # 'ca-pub-xxxxxxxxxxxxxxxx'
