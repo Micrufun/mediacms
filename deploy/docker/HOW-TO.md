@@ -109,6 +109,9 @@ npm install --legacy-peer-deps
 
 ## Ads management system
 
+Before you can modify database tables of `Ads`, `Advertisers`, `Categories` at https://{domain}/admin/ads/ ,
+you need to apply these changes once:
+
 ```
 sudo su
 /usr/local/bin/docker-compose exec web python -m pip install -r requirements.txt
