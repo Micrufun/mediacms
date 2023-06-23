@@ -895,6 +895,8 @@ def video_with_voices(user_or_session, friendly_token=None, voicesUid=None):
 
     watermarked_file_name = "watermarked_{0}".format(result_file_name)
 
+    # Add watermark to exported video.
+    # https://www.bannerbear.com/blog/how-to-add-watermark-to-videos-using-ffmpeg/
     cmd = [
         settings.FFMPEG_COMMAND,
         "-i",
