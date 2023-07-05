@@ -905,6 +905,10 @@ def video_with_voices(user_or_session, friendly_token=None, voicesUid=None):
         settings.STATIC_ROOT + "/images/watermark.png",
         "-filter_complex",
         "[1][0]scale2ref=oh*mdar:ih*0.2[logo][video];[video][logo]overlay=(main_w-overlay_w):(main_h-overlay_h)",
+        "-s",
+        "426x240",
+        "-c:a",
+        "copy",
         watermarked_file_name,
     ]
 
