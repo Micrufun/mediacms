@@ -868,7 +868,13 @@ def video_with_voices(user_or_session, friendly_token=None, voicesUid=None):
     voiceCounter = 1
     arg = ""
     for voice in voices:
-        arg += "[{0}:a] ".format(voiceCounter)
+        # Convert start time unit from second to millisecond.
+        arg += "[{0}:a]adelay={1}|{1}[a{0}]; ".format(voiceCounter, voice.start*1000)
+        voiceCounter += 1
+    # https://stackoverflow.com/a/76738257/3405291
+    voiceCounter = 1
+    for voice in voices:
+        arg += "[a{0}]".format(voiceCounter)
         voiceCounter += 1
     arg += "amix=inputs={0}:duration=longest:dropout_transition=0".format(len(voices))
 
