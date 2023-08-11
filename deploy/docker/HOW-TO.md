@@ -24,7 +24,7 @@ Just in case, if you need to stop it, shutdown the whole thing by:
 ```
 sudo su
 cd /home/mediacms.io/mediacms/
-/usr/local/bin/docker-compose down
+/usr/local/bin/docker-compose down --remove-orphans
 ```
 
 ## Add user to admin panel:
