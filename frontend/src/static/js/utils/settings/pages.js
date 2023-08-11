@@ -43,6 +43,10 @@ export function init(settings) {
       }
     }
   }
+
+  // Hide the page on left sidebar.
+  // We don't want people to see our members/users.
+  PAGES.members.enabled = false;
 }
 
 export function settings() {
