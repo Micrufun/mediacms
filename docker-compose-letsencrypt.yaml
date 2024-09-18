@@ -59,8 +59,8 @@ services:
       ENABLE_CELERY_SHORT: 'no'
       ENABLE_CELERY_LONG: 'no'
       ENABLE_MIGRATIONS: 'no'
-      VIRTUAL_HOST: 'micrufun.com'
-      LETSENCRYPT_HOST: 'micrufun.com'
+      VIRTUAL_HOST: 'micrufun.ir'
+      LETSENCRYPT_HOST: 'micrufun.ir'
       LETSENCRYPT_EMAIL: 'micrufun@gmail.com'
     depends_on:
       - migrations
